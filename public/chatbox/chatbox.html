@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Chat Box UI Design</title>
+    <link rel="stylesheet" href="/chatbox/chatbox.css" />
+
+    <!-- Import this CDN to use icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    <script type="module" src="firebase-config.js"></script>
+    <script src="/chatbox/chatbox.js" type="module"></script>
+  </head>
+  <body>
+    <!-- Main container  -->
+    <div class="chat-box" id="chatscontainer">
+      <!--  Message header section starts    -->
+
+      <div class="msg-header">
+        <div class="container1">
+                    <div class="active">
+            <p id="username"></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Message header section ends -->
+
+      <!-- Chat inbox section starts -->
+
+      <div class="chat-page">
+        <div class="msg-inbox">
+          <div class="chats">
+            <ul class="msg-page" id="msg-page">
+              <!-- Contains the recieved and sent messages -->
+              
+              
+            </ul>
+          </div>
+
+          <!--  Message bottom section starts -->
+          <div class="msg-bottom">
+            <div class="input-group">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Write message..."
+                id="outgoing_msg"
+              />
+              <div class="input-group-append">
+                <span class="input-group-text send-icon" id="send_msg_btn"
+                  ><i class="bi bi-send"></i>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Message bottom section ends. -->
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

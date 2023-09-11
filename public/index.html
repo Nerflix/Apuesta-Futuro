@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Load jQuery before swiper -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="script.js" ></script>
+    <script src="/authentication/logout.js" type="module" ></script>
+</head>
+
+<body>
+    <header> 
+      <nav class="header-nav">
+        <div class="logo">
+          <a href="index.html"><img src="graphics/spanish-graphics/logo.jpeg" alt="Logo"></a>
+        </div>
+        <ul class="nav-links">
+          <li><a href="livegames.html" class="menu-button">Live</a></li>
+          <li><a href="#" class="menu-button">Bonus Games</a></li>
+          <li><a href="#" class="menu-button">Results</a></li>
+          <li><a href="#" class="menu-button">Check Betslip</a></li>
+          <li><a href="#" class="menu-button">Deposit</a></li>
+          <li class="dropdown">
+            <a href="#" class="account-button"><img src = "graphics/spanish-graphics/account.jpg" alt = "account"></a>
+            <ul class="dropdown-content">
+              <li><a href="#" class="dropdown-button">Profile</a></li>
+              <li><a href="authentication/signup.html" class="dropdown-button">Sign up</a></li>
+              <li><a href="authentication/login.html" class="dropdown-button">Login</a></li>
+              <li><a href="#" class="dropdown-button" id="logout-link">Logout</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+   
+
+
+    <div class="wrapper-containers">
+      <div class="menu-container left-menu">
+        <nav class="vertical-menu">
+          <ul class="nav-links">
+            <li><a href="#" class="body-button">Vertical Menu 1 Item 1</a></li>
+      
+            <!-- Add more items here as needed -->
+          </ul>
+        </nav>
+  
+  
+  
+        <nav class="center-container">
+          
+          <div class="wrapper-top">
+            <!-- Slider main container -->
+            <div class="swiper">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="graphics/spanish-graphics/Image1.jpeg" alt="Image 1"></div>
+                <div class="swiper-slide"><img src="graphics/spanish-graphics/Image3.jpeg" alt="Image 2"></div>
+                <div class="swiper-slide"><img src="graphics/spanish-graphics/Image6.jpeg" alt="Image 3"></div>
+                <div class="swiper-slide"><img src="graphics/spanish-graphics/Image4.jpeg" alt="Image 4"></div>
+                <div class="swiper-slide"><img src="graphics/spanish-graphics/Image7.jpeg" alt="Image 5"></div>
+                <div class="swiper-slide"><img src="graphics/spanish-graphics/Image5.jpeg" alt="Image 6"></div>
+                <div class="swiper-slide"><img src="graphics/spanish-graphics/Image13.jpeg" alt="Image 7"></div>
+  
+              </div>
+              <!-- If we need pagination -->
+              <div class="swiper-pagination"></div>
+    
+              <!-- If we need navigation buttons -->
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+          </div>
+  
+  
+          <div class="container-second">
+            <ul class="nav-links">
+              <li><a href="#" class="body-button">Vertical Menu 2 Item 1</a></li>
+              <li><a href="#" class="body-button">Vertical Menu 2 Item 2</a></li>
+              <!-- Add more items here as needed -->
+            </ul>
+          </div>
+  
+  
+          
+        </nav>
+  
+  
+        <nav class="vertical-menu right-menu">
+          <ul class="nav-links">
+            <li><a href="#" class="body-button">Vertical Menu 3 Item 1</a></li>
+            <!-- Add more items here as needed -->
+          </ul>
+
+
+         
+        </nav>
+      </div>
+    </div>
+
+  <div class="chat-btn">
+    <img src="graphics/spanish-graphics/Circle-icons-chat.svg.png" alt="chat box icon btn">
+  </div>
+  <!-- Hidden div to hold chat box content -->
+  <div class="chat-popup" style="display: none;"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+</body>
+</html>

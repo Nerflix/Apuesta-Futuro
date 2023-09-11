@@ -1,0 +1,132 @@
+body {
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    font-family: 'Poppins', sans-serif;
+    margin: 0; /* Reset default margin */
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px; /* Adjust as needed */
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#form {
+    width: fit-content;
+    max-width: 400px; /* Adjust as needed */
+    margin: 20vh auto 0 auto;
+    padding: 20px;
+    background-color: whitesmoke;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+#form h1 {
+    color: #0f2027;
+    text-align: center;
+}
+
+#form button {
+    padding: 10px;
+    margin-top: 10px;
+    width: 100%;
+    color: white;
+    background-color: rgb(41, 57, 194);
+    border: none;
+    border-radius: 4px;
+}
+
+
+
+.input-control {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-control input, 
+.input-control select {
+    width: 100%;
+    border: 2px solid #f0f0f0;
+	border-radius: 4px;
+	display: block;
+	font-size: 12px;
+	padding: 10px;
+	margin: 2px;
+    box-sizing: border-box;
+}
+
+.input-control input, 
+.input-control select:focus {
+    outline: 0;
+}
+
+.input-control.success input,
+ .input-control.success select {
+    border-color: #09c372;
+}
+
+.input-control.error input,
+ .input-control.error select {
+    border-color: #ff3860;
+}
+
+.input-control .error {
+    color: #ff3860;
+    font-size: 10px;
+    height: 13px;
+}
+
+.float-child {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 10px;
+} 
+
+.float-child .input-control {
+    flex-basis: calc(50% - 10px);
+    margin: 0px;
+}
+.float-child {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 10px;
+} 
+
+.float-child .input-control {
+    flex-basis: calc(50% - 10px);
+    margin: 0px;
+}
+#loginform {
+    width: 100%;
+    max-width: 400px;
+    margin: 20vh auto 0 auto;
+    padding: 20px;
+    background-color: whitesmoke;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+#loginform h1 {
+    color: #0f2027;
+    text-align: center;
+}
+
+#loginform button {
+    padding: 10px;
+    margin-top: 10px;
+    width: 100%;
+    color: white;
+    background-color: rgb(41, 57, 194);
+    border: none;
+    border-radius: 4px;
+}
+
+/* Media queries for tablet and phone */
+@media (max-width: 768px) {
+    .float-child .input-control {
+        flex-basis: 100%;
+        margin-right: 0;
+    }
+}
