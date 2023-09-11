@@ -232,13 +232,7 @@ input:focus {
         width: 50%;
     }
 
-/* Styling the avatar */
-.sent-chats-img {
-    display: inline-block;
-    width: 50px;
-    float: right;
-    margin-right: 1rem;
-}
+
 
 @media only screen and (max-device-width: 850px) {
     *,
